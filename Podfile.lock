@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.8.1)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - Kingfisher (5.1.1)
+  - ObjectMapper (3.4.2)
+  - Poi (3.1.0)
+  - SwiftKeychainWrapper (3.2.0)
+  - TisprCardStack (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Kingfisher
+  - Poi
+  - SwiftKeychainWrapper (~> 3.0)
+  - TisprCardStack
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Kingfisher
+    - ObjectMapper
+    - Poi
+    - SwiftKeychainWrapper
+    - TisprCardStack
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  Kingfisher: 2558186963e5be42d98c5b110ccb3130148b77e4
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Poi: 153f9c751449573ad484dc68b6e4c374cc33d409
+  SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
+  TisprCardStack: 49c1b04e124105d7f0bcec3e0a6aac703229e143
+
+PODFILE CHECKSUM: ac595df36c8af40338940bd81af703d65fecc5df
+
+COCOAPODS: 1.6.0

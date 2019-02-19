@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Card" customModule="tindertryout" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Card" customModule="tindertryout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="527"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-C9-pZr">
+                    <rect key="frame" x="0.0" y="0.0" width="382" height="466"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-Nk-FVK">
+                    <rect key="frame" x="0.0" y="466" width="382" height="31"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="RSI-0S-yqU"/>
+                        <constraint firstAttribute="width" constant="381" id="xIL-iV-eBQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEF-sa-tiY">
+                    <rect key="frame" x="0.0" y="494" width="382" height="33"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="381" id="74s-Rq-Sug"/>
+                        <constraint firstAttribute="height" constant="33" id="PP4-ZN-ZU4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.39607843139999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OfG-Nk-FVK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7Or-l2-GY3"/>
+                <constraint firstItem="OfG-Nk-FVK" firstAttribute="top" secondItem="q0E-C9-pZr" secondAttribute="bottom" id="7qh-lq-7Kb"/>
+                <constraint firstItem="q0E-C9-pZr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-20" id="E6m-bD-3sb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wEF-sa-tiY" secondAttribute="trailing" id="IYc-qa-vdV"/>
+                <constraint firstItem="wEF-sa-tiY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MgK-5C-yx2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OfG-Nk-FVK" secondAttribute="trailing" id="NcY-JH-pjv"/>
+                <constraint firstItem="wEF-sa-tiY" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="c0t-l3-Xvo"/>
+                <constraint firstItem="wEF-sa-tiY" firstAttribute="top" secondItem="q0E-C9-pZr" secondAttribute="bottom" constant="28" id="gPf-ec-OSE"/>
+                <constraint firstItem="q0E-C9-pZr" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-61" id="qr0-kx-Fqc"/>
+                <constraint firstItem="q0E-C9-pZr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="zD0-7d-PMg"/>
+                <constraint firstItem="q0E-C9-pZr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zbu-3t-x41"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descrip" destination="wEF-sa-tiY" id="XLu-Ij-5ba"/>
+                <outlet property="mealImage" destination="q0E-C9-pZr" id="9f2-eH-Xgh"/>
+                <outlet property="mealTitle" destination="OfG-Nk-FVK" id="eDO-Yc-J7e"/>
+            </connections>
+            <point key="canvasLocation" x="38.399999999999999" y="128.18590704647679"/>
+        </view>
+    </objects>
+</document>
